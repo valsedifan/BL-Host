@@ -68,7 +68,7 @@ function createGallery(folder) {
         .filter(file => imageExtensions.test(file))
         .map(file =>
             path.relative(
-                hostFolder,
+                rootFolder,
                 path.join(folder, file)
             ).replaceAll("\\", "/")
         );
