@@ -61,7 +61,7 @@ console.log("Scanning:", rootFolder);
 console.log("Found:", folders);
 
 
-// Create individual gallery pages
+// Create individual gallery pages d
 function createGallery(folder) {
 
     const images = fs.readdirSync(folder)
