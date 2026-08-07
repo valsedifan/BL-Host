@@ -68,13 +68,13 @@ function createGallery(folder) {
         .filter(file => imageExtensions.test(file))
         .map(file =>
             path.relative(
-                rootFolder,
+                hostFolder,
                 path.join(folder, file)
             ).replaceAll("\\", "/")
         );
 
 
-    const relativeFolder = path.relative(rootFolder, folder);
+    const relativeFolder = path.relative(hostFolder, folder);
 
 
     const title = relativeFolder
